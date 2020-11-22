@@ -2,7 +2,7 @@
 // slow navigation
 $(document).ready(function() {
 
-    window.scrollTo(0,document.body.scrollTop); // load page on top
+   // window.scrollTo(0,document.body.scrollTop); // load page on top
 
     //навигация - плавный скроллинг к якорю
     $("#menu").on("click","a", function (event) {
