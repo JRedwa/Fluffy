@@ -1,10 +1,10 @@
 <?php
-    require_once "header.php";
+    require_once "header-single.php";
 ?>
 
 
 <section class="sm top">
-  <h2>Clients Gallery</h2>
+  <h2>Our Clients Gallery</h2>
   <hr>
   <div class="heb right"> 
       <!--row1 -->
