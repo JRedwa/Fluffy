@@ -26,7 +26,7 @@ body {
   
   h3 {
     font-size: 2rem;
-    color: #ffffff;
+    
   }
   
   hr{
@@ -228,13 +228,18 @@ body {
   }
 
   .head-link {
-    display: initial;
+    display: list-item;
+    list-style-image: url("https://img.icons8.com/doodle/35/000000/checkmark.png");
+    
+  
   }
 
   .head-link:hover {
     color: #84f800;
     cursor: pointer;
   }
+
+
 
   @media (max-width: 960px) {
     #contact-form, .sm{
@@ -278,13 +283,17 @@ body {
   position: relative;
   top: 33%;
  }
+
+ .hidden {
+   display: none;
+ }
  
  /* portfolio section */
 
 /* Try */
 
 .container {
-  margin: 20px auto;
+ /* margin: 20px auto;*/
   width: 70%;
   font-size: 1rem;
 }
