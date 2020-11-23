@@ -22,12 +22,13 @@ $(document).ready(function() {
 
 // hide menu on top - add/remove class hide-menu
 jQuery(function($) {
-        $(window).scroll(function(){
-            if($(this).scrollTop()>100){
-                $('#menu').addClass('hide-menu');
-            }
-            else if ($(this).scrollTop()<100){
-                $('#menu').removeClass('hide-menu');
-            }
-        });
+    $(window).scroll(function(){
+        if($(this).scrollTop()>100){
+            $('#menu').addClass('hide-menu');
+        }
+        else if ($(this).scrollTop()<100){
+            $('#menu').removeClass('hide-menu');
+        }
     });
+});
+
