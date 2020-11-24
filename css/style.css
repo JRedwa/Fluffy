@@ -3,9 +3,9 @@ body {
     font-family: 'Big Shoulders Text', cursive;
     font-size: 1.4rem;
     line-height: 2;
-    color:#dee2e6;
-    background-color: #82728c;
-    background-image: url("https://www.transparenttextures.com/patterns/subtle-white-feathers.png");
+    color:#82728c;
+   /* background-color: #82728c;
+    background-image: url("https://www.transparenttextures.com/patterns/subtle-white-feathers.png");*/
 
     
   }
@@ -15,18 +15,13 @@ body {
     font-family: 'Ruthie', cursive;
     font-size: 6rem;
     letter-spacing: 12px;
-    color: #f4f4f4;
+    text-shadow: #92dd45 0px 0px 15px;
+  
   }
   
   h2 {
     padding-top: 5%;
     font-size: 3rem;
-    color: #f4f4f4;
-  }
-  
-  h3 {
-    font-size: 2rem;
-    
     
   }
   
@@ -37,21 +32,18 @@ body {
     margin-bottom: 2rem;
   }
 
+  a {
+    color: #21bbc1;
+  }
+  
   a:hover {
     text-decoration: none;
   }
   
   #menu {
-    
     background-color: #6a2599;
     background-image: url("https://www.transparenttextures.com/patterns/xv.png");
     height: 125px;
-  }
-
-  #demo {
-    margin-top: 125px;
-    height: 700px;
-    overflow: hidden;
   }
 
   #header {
@@ -64,12 +56,17 @@ body {
     background-image: url(),linear-gradient(to bottom,rgba(57,115,230,.2),transparent);
   }
 
-  #contacts {
-    background-image: url(),linear-gradient(to top,rgba(57,115,230,.2),transparent);
-    margin-top: 5%;
+  #services {
+    background-image: url(), linear-gradient(to bottom,#dce6fa, transparent);
+  }
+
+  #portfolio {
+    background-image: url(), linear-gradient(to top, #dce6fa, transparent);
+    padding-bottom: 1px;
   }
   
   #footer {
+    color: #f6dccc;
     background-color: #6a2599;
     background-image: url("https://www.transparenttextures.com/patterns/hexellence.png");
     padding: 20px 15%;
@@ -108,10 +105,8 @@ body {
   }
   
   .sm {
-    padding: 2%;
+    padding: 0 10%;
     width: 60%;
-    left: 20%;
-    position: relative;
   }
 
   .sm1 {
@@ -126,7 +121,7 @@ body {
     opacity: .75;
     transition: 1500ms linear;
   }
-  
+
   /*navigation section */
   .navbar{
     padding: 0;
@@ -190,15 +185,50 @@ body {
     }
   } 
 
+  /* Intro */
+  .intro {
+    display: flex;
+    margin-top: 125px;
+    height: 565px;
+    overflow: hidden;
+  }
+
+  .intro-img {
+    height: fit-content;
+    width: -webkit-fill-available;
+    left: 2%;
+    position: relative;
+    transform: rotate(-7deg);
+    box-shadow: rgb(181, 226, 109) 0px 0px 20px 2px;
+  }
+
+
   /* carousel section */
   .slide-img {
     width: -webkit-fill-available;
-    height: -webkit-fill-available;
-    
+    height: -webkit-fill-available; 
   }
  
   /* about section */
-  .whyUs, #contacts{
+  .about-img {
+    border-radius: 15%;
+    box-shadow: black 0px 0px 20px 2px;
+    height: fit-content;
+  }
+
+  @media (max-width: 768px) {
+    .about-img{
+      margin-top: 20px;
+      width: 100%;
+    }
+  }  
+
+  .height-center {
+    align-items: center;
+    display: grid;
+  }
+
+  .whyUs, .intro{
     background-color: #ef8172;
     background-image: url("https://www.transparenttextures.com/patterns/rice-paper-3.png");
     box-shadow: 0px 0px 20px 2px #ef8172;
@@ -214,14 +244,11 @@ body {
   }
   
   .icon:hover {
-    color:#84f800; 
+    color: #61b404; 
+    
   }
 
-  .serv-icon:hover {
-    box-shadow: rgb(132, 240, 0) 0px 0px 20px 10px;
-    border-radius: 100%;
-  }
-
+  
   .head-div {
     display: -webkit-box;
     position: relative;
@@ -236,8 +263,9 @@ body {
   }
 
   .head-link:hover {
-    color: #84f800;
+    color: #000000;
     cursor: pointer;
+    text-shadow: 0 0 30px #000000;
   }
 
 
@@ -294,15 +322,16 @@ body {
 /* Try */
 
 .container {
- /* margin: 20px auto;*/
-  width: 70%;
   font-size: 1rem;
 }
 
 /* line 68, ../compass/sass/style.scss */
 #slider {
-background: url("img/noise.png"), rgba(255, 255, 255, 0.4);
+background: url("img/noise.png"), #f6dccc;
+border-radius: 2%;
+box-shadow: black 0px 0px 20px 1px;
 padding: 30px;
+
 }
 
 /* line 77, ../compass/sass/style.scss */
@@ -483,10 +512,6 @@ background: linear-gradient(#69ba2b, #519121);
   
   /* contacts section */
 
-  .data-col {
-    width: 100%;
-  }
-
   .center {
     padding-top: 3%;
   }
@@ -600,16 +625,7 @@ background: linear-gradient(#69ba2b, #519121);
   
   
   /* footer */
-  .footer-details {
-    text-align: right;
-  }
-
-  a {
-    color: #21bbc1;
-  }
   
-  @media (max-width: 767px) {
-    .footer-details {
-      text-align: left;
-    }
-  }
+
+  
+ 
